@@ -6,7 +6,7 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
-    %title Freelancer - Start Bootstrap Theme
+    %title Dr. Max S. Wood DDS - Dentist, Orthodontist, Tooth Pain, Braces, Smile
     / Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/
     %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
     / Custom CSS
@@ -31,18 +31,18 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{:href => "#page-top"} Start Bootstrap
+          %a.navbar-brand{:href => "#page-top"} Dr. Max S. Wood DDS
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li.hidden
               %a{:href => "#page-top"}
             %li.page-scroll
-              %a{:href => "#portfolio"} Portfolio
-            %li.page-scroll
-              %a{:href => "#about"} About
+              %a{:href => "#location"} Location
             %li.page-scroll
               %a{:href => "#contact"} Contact
+            %li.page-scroll
+              %a{:href => "/blog"} Blog
         / /.navbar-collapse
       / /.container-fluid
     / Header
@@ -52,76 +52,105 @@
           .col-lg-12
             %img.img-responsive{:alt => "", :src => "img/profile.png"}/
             .intro-text
-              %span.name Start Bootstrap
+              %span.name Dr. Max S. Wood DDS
               %hr.star-light/
-              %span.skills Web Developer - Graphic Artist - User Experience Designer
-    / Portfolio Grid Section
-    %section#portfolio
+              %span.skills Quality Dental Care for the Whole Family with a Personal Touch
+    / Appointment Grid Section
+    %section#location
       .container
         .row
-          .col-lg-12.text-center
-            %h2 Portfolio
+          .col-md-12.text-center
+            %h2 Come See Us
             %hr.star-primary/
         .row
-          .col-sm-4.portfolio-item
-            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal1"}
-            .caption
-              .caption-content
-                %i.fa.fa-search-plus.fa-3x
-            %img.img-responsive{:alt => "", :src => "img/portfolio/cabin.png"}/
-          .col-sm-4.portfolio-item
-            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal2"}
-            .caption
-              .caption-content
-                %i.fa.fa-search-plus.fa-3x
-            %img.img-responsive{:alt => "", :src => "img/portfolio/cake.png"}/
-          .col-sm-4.portfolio-item
-            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal3"}
-            .caption
-              .caption-content
-                %i.fa.fa-search-plus.fa-3x
-            %img.img-responsive{:alt => "", :src => "img/portfolio/circus.png"}/
-          .col-sm-4.portfolio-item
-            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal4"}
-            .caption
-              .caption-content
-                %i.fa.fa-search-plus.fa-3x
-            %img.img-responsive{:alt => "", :src => "img/portfolio/game.png"}/
-          .col-sm-4.portfolio-item
-            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal5"}
-            .caption
-              .caption-content
-                %i.fa.fa-search-plus.fa-3x
-            %img.img-responsive{:alt => "", :src => "img/portfolio/safe.png"}/
-          .col-sm-4.portfolio-item
-            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal6"}
-            .caption
-              .caption-content
-                %i.fa.fa-search-plus.fa-3x
-            %img.img-responsive{:alt => "", :src => "img/portfolio/submarine.png"}/
-    / About Section
+          .col-sm-6
+            %iframe(width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=777%20N%20500%20W%20%23101%2C%20Provo%2C%20Utah%2C%2084601&key=AIzaSyA8yC3aBap84yaKlVRPnFHPEIF6Ky_0eL0")
+          .col-sm-6
+            .row
+              .col-sm-12
+                %h4 Visit Us
+                %a(href="https://www.google.com/maps/preview?ll=40.243995,-111.668057&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=777+N+500+W+%23101+Provo,+UT+84601")
+                  Dr. Max S. Wood, DDS
+                  %br
+                  777 N 500 W #101A
+                  %br
+                  Provo, Utah, 84601
+            .row
+              .col-sm-12
+                %h4 Call Us
+                801-377-6448
+            .row
+              .col-sm-12
+                %h4 Email Dr. Max
+                %a(href="mailto:drmax@drmaxwood.com")
+                  drmax@drmaxwood.com
     %section#about.success
       .container
         .row
-          .col-lg-12.text-center
-            %h2 About
+          .col-md-12.text-center
+            %h2 Affordable Dental Care for the Entire Family
             %hr.star-light/
         .row
-          .col-lg-4.col-lg-offset-2
-            %p Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
-          .col-lg-4
-            %p Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
-          .col-lg-8.col-lg-offset-2.text-center
-            %a.btn.btn-lg.btn-outline{:href => "#"}
-              %i.fa.fa-download
-              Download Theme
-    / Contact Section
-    %section#contact
+          .col-sm-4
+            %h4 Personal Touch
+            %p Dr. Max is doesn't treat mouths, he treats people. Many of his patients call him "Doc", "Dr. Max", or "Grandpa Max."
+            %p The way you look and the way you feel are important. They effect your life every day.
+            %p Let us help you live your best life a great smile on your face.
+            %p
+              Let us help you with
+              %ul
+                %li Braces
+                %li Tooth Repair
+                %li Reducing Tooth Pain
+                %li Bleaching
+                %li TMJ
+                %li Wisdom Teeth
+                %li Missionary Exams
+          .col-sm-4
+            %h4 Affordable Care
+            %p We work with most insurances to make sure that you can afford the care you need.
+            %p If you don't have insurance, we also offer a cash discount.
+            %p
+              We also have discounts for the following groups:
+              %ul
+                %li Seniors
+                %li Students
+          .col-sm-4
+            %h4 Quality Denistry
+            %p Dr. Max has been a practicing dentist for over 25 years.
+            %p He now has lifetime patients who are bringing him their children.
+    / About Section
+    %section#email
       .container
         .row
           .col-lg-12.text-center
-            %h2 Contact Me
+            %h2 Get Weekly Dental Tips
             %hr.star-primary/
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            %form#contactForm{:name => "sentMessage", :novalidate => ""}
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  %label Name
+                  %input#name.form-control{"data-validation-required-message" => "Please enter your name.", :placeholder => "Your Name", :required => "", :type => "text"}/
+                  %p.help-block.text-danger
+              .row.control-group
+                .form-group.col-xs-12.floating-label-form-group.controls
+                  %label Email Address
+                  %input#email.form-control{"data-validation-required-message" => "Please enter your email address.", :placeholder => "Email Address", :required => "", :type => "email"}/
+                  %p.help-block.text-danger
+              .row
+                .form-group.col-xs-12
+                  %button.btn.btn-lg.btn-success{:href => "#"}
+                    %i.fa.fa-envelope
+                    Get My Tips
+    / Contact Section
+    %section#contact.success
+      .container
+        .row
+          .col-lg-12.text-center
+            %h2 Ask a Tooth Question
+            %hr.star-light/
         .row
           .col-lg-8.col-lg-offset-2
             / To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
@@ -151,7 +180,7 @@
               #success
               .row
                 .form-group.col-xs-12
-                  %button.btn.btn-success.btn-lg{:type => "submit"} Send
+                  %button.btn.btn-outline.btn-lg{:type => "submit"} Send
     / Footer
     %footer.text-center
       .footer-above
@@ -160,9 +189,9 @@
             .footer-col.col-md-4
               %h3 Location
               %p
-                3481 Melrose Place
-                %br>/
-                Beverly Hills, CA 90210
+                777 N 500 W #101A
+                %br
+                Provo, Utah, 84601
             .footer-col.col-md-4
               %h3 Around the Web
               %ul.list-inline
@@ -178,223 +207,20 @@
                 %li
                   %a.btn-social.btn-outline{:href => "#"}
                     %i.fa.fa-fw.fa-linkedin
-                %li
-                  %a.btn-social.btn-outline{:href => "#"}
-                    %i.fa.fa-fw.fa-dribbble
             .footer-col.col-md-4
-              %h3 About Freelancer
+              %h3 About Dr. Max S. Wood, DDS
               %p
-                Freelance is a free to use, open source Bootstrap theme created by
-                = succeed "." do
-                  %a{:href => "http://startbootstrap.com"} Start Bootstrap
+                Dr. Max S. Wood DDS is a general family dentist providing quality affordable care for the entire family with a personal touch.
       .footer-below
         .container
           .row
             .col-lg-12
-              Copyright &copy; Your Website 2014
+              Copyright &copy; Dr. Max S. Wood DDS 2014
     / Scroll to Top Button (Only visible on small and extra-small screen sizes)
     .scroll-top.page-scroll.visible-xs.visble-sm
       %a.btn.btn-primary{:href => "#page-top"}
         %i.fa.fa-chevron-up
     / Portfolio Modals
-    #portfolioModal1.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-      .modal-content
-        .close-modal{"data-dismiss" => "modal"}
-          .lr
-            .rl
-        .container
-          .row
-            .col-lg-8.col-lg-offset-2
-              .modal-body
-                %h2 Project Title
-                %hr.star-primary/
-                %img.img-responsive.img-centered{:alt => "", :src => "img/portfolio/cabin.png"}/
-                %p
-                  Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  = succeed "." do
-                    %a{:href => "https://sellfy.com/p/8Q9P/jV3VZ/"} Flat Icons
-                  On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                %ul.list-inline.item-details
-                  %li
-                    Client:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Start Bootstrap
-                  %li
-                    Date:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} April 2014
-                  %li
-                    Service:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Web Development
-                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
-                  %i.fa.fa-times
-                  Close
-    #portfolioModal2.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-      .modal-content
-        .close-modal{"data-dismiss" => "modal"}
-          .lr
-            .rl
-        .container
-          .row
-            .col-lg-8.col-lg-offset-2
-              .modal-body
-                %h2 Project Title
-                %hr.star-primary/
-                %img.img-responsive.img-centered{:alt => "", :src => "img/portfolio/cake.png"}/
-                %p
-                  Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  = succeed "." do
-                    %a{:href => "https://sellfy.com/p/8Q9P/jV3VZ/"} Flat Icons
-                  On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                %ul.list-inline.item-details
-                  %li
-                    Client:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Start Bootstrap
-                  %li
-                    Date:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} April 2014
-                  %li
-                    Service:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Web Development
-                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
-                  %i.fa.fa-times
-                  Close
-    #portfolioModal3.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-      .modal-content
-        .close-modal{"data-dismiss" => "modal"}
-          .lr
-            .rl
-        .container
-          .row
-            .col-lg-8.col-lg-offset-2
-              .modal-body
-                %h2 Project Title
-                %hr.star-primary/
-                %img.img-responsive.img-centered{:alt => "", :src => "img/portfolio/circus.png"}/
-                %p
-                  Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  = succeed "." do
-                    %a{:href => "https://sellfy.com/p/8Q9P/jV3VZ/"} Flat Icons
-                  On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                %ul.list-inline.item-details
-                  %li
-                    Client:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Start Bootstrap
-                  %li
-                    Date:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} April 2014
-                  %li
-                    Service:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Web Development
-                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
-                  %i.fa.fa-times
-                  Close
-    #portfolioModal4.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-      .modal-content
-        .close-modal{"data-dismiss" => "modal"}
-          .lr
-            .rl
-        .container
-          .row
-            .col-lg-8.col-lg-offset-2
-              .modal-body
-                %h2 Project Title
-                %hr.star-primary/
-                %img.img-responsive.img-centered{:alt => "", :src => "img/portfolio/game.png"}/
-                %p
-                  Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  = succeed "." do
-                    %a{:href => "https://sellfy.com/p/8Q9P/jV3VZ/"} Flat Icons
-                  On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                %ul.list-inline.item-details
-                  %li
-                    Client:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Start Bootstrap
-                  %li
-                    Date:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} April 2014
-                  %li
-                    Service:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Web Development
-                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
-                  %i.fa.fa-times
-                  Close
-    #portfolioModal5.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-      .modal-content
-        .close-modal{"data-dismiss" => "modal"}
-          .lr
-            .rl
-        .container
-          .row
-            .col-lg-8.col-lg-offset-2
-              .modal-body
-                %h2 Project Title
-                %hr.star-primary/
-                %img.img-responsive.img-centered{:alt => "", :src => "img/portfolio/safe.png"}/
-                %p
-                  Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  = succeed "." do
-                    %a{:href => "https://sellfy.com/p/8Q9P/jV3VZ/"} Flat Icons
-                  On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                %ul.list-inline.item-details
-                  %li
-                    Client:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Start Bootstrap
-                  %li
-                    Date:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} April 2014
-                  %li
-                    Service:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Web Development
-                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
-                  %i.fa.fa-times
-                  Close
-    #portfolioModal6.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-      .modal-content
-        .close-modal{"data-dismiss" => "modal"}
-          .lr
-            .rl
-        .container
-          .row
-            .col-lg-8.col-lg-offset-2
-              .modal-body
-                %h2 Project Title
-                %hr.star-primary/
-                %img.img-responsive.img-centered{:alt => "", :src => "img/portfolio/submarine.png"}/
-                %p
-                  Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  = succeed "." do
-                    %a{:href => "https://sellfy.com/p/8Q9P/jV3VZ/"} Flat Icons
-                  On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                %ul.list-inline.item-details
-                  %li
-                    Client:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Start Bootstrap
-                  %li
-                    Date:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} April 2014
-                  %li
-                    Service:
-                    %strong
-                      %a{:href => "http://startbootstrap.com"} Web Development
-                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
-                  %i.fa.fa-times
-                  Close
     / jQuery Version 1.11.0
     %script{:src => "js/jquery-1.11.0.js"}
     / Bootstrap Core JavaScript
